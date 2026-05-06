@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Tags Genéricas -->
+    <span>Texto em um span</span>
+    <span>Texto em um span</span>
+    <div>Texto em uma div</div>
+
+    <!-- Estrutura Semântica -->
+    <header>Aqui geralmente fica o logo e a navegação principal (Menu)</header>
+    <nav>Links de navegação do site</nav>
+    <main>O conteúdo principal da página</main>
+    <section>Uma seção genérica de conteúdo</section>
+    <article>Um conteúdo independente, como um post de blog</article>
+    <aside>Conteúdo lateral complementário (sidebar)</aside>
+    <footer>Rodapé da página</footer>
+
+    <!-- Textos -->
+    <span>Texto dentro de um span<br />com quebra de linha</span>
+
+    <p>Este é um <u>parágrafo 1</u></p>
+    <p>Este é um <i>parágrafo 2</i></p>
+    <p>Este é um <b>parágrafo 3</b></p>
+    <p>Este é um <s>parágrafo 4</s></p>
+    <p>Este é um <mark>parágrafo 5</mark></p>
+    <p>Este é um <sub>parágrafo 6</sub></p>
+    <p>Este é um <sup>parágrafo 7</sup></p>
+    <p>Este é um comando: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
+    <p>O evento ocorrerá em <time datetime="2026-05-06">6 de Maio</time>.</p>
+
+    <pre>
+        A tag pre
+        mantém
+        a formatação (espaços e quebras)
+        exatamente como está escrito!
+    </pre>
+
+    <!-- Tags Interativas -->
+    <details>
+        <summary>Clique aqui para expandir</summary>
+        <p>Este conteúdo estava escondido! Muito útil para sessões de FAQ (Perguntas Frequentes).</p>
+    </details>
+
+    <hr />  
+
+    <!-- Tags Funcionais -->
+     <a href="https://www.google.com"> 
+        Ir para o google
+     </a>
+
+    <br />
+
+    <button>
+        Clique aqui
+    </button>
+
+    <!-- Citação -->
+    <blockquote> caixa de citação </blockquote>
+
+    <textarea> 
+        caixa para textos longos 
+    </textarea>
+
+    <!-- Tags Semânticas -->
+    <h1>Titulo em h1</h1>
+    <h3>Subtitulo em h3</h3>
+    <h6>Subitulo em h6</h6>
+
+    <p> Texto dentro de um <strong>parágrafo</strong> </p>
+    <p> Texto dentro de um <i>parágrafo</i> </p>
+    <p> Texto dentro de um <s>parágrafo</s> </p>
+
+    <!-- Listas -->
+    <ul> 
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+    </ul>
+
+    <ol> 
+        <li> Item 1 </li>
+        <li> Item 2 </li>
+        <li> Item 3 </li>
+    </ol>
+
+    <!-- Listas de Descrição -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação de Hipertexto.</dd>
+
+        <dt>CSS</dt>
+        <dd>Linguagens de Folhas de Estilo em Cascata.</dd>
+    </dl>
+
+    <hr />
+
+    <!-- Tabela -->
+    <table> 
+        <tr> 
+            <th> Coluna 1 </th>
+            <th> Coluna 2 </th>
+            <th> Coluna 3 </th>
+        </tr>
+        <tr> 
+            <td> Linha 1, Coluna 1 </td>
+            <td> Linha 1, Coluna 2 </td>
+            <td> Linha 1, Coluna 3 </td>
+        </tr>
+        <tr> 
+            <td colspan="2"> Linha 2, Usando Coluna 1 e 2 </td>
+            <td> Linha 2, Coluna 3 </td>
+        </tr>
+    </table>
+
+    <!-- Mídia -->
+    <img src="https://placehold.co/200x100/EEE/31343C" alt="Imagem de exemplo">
+
+    <figure>
+        <img src="https://placehold.co/150x150" alt="Exemplo de foto geométrica">
+        <figcaption>Fig. 1 - Uma imagem de placeholder genérica.</figcaption>
+    </figure>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <!-- Formulário -->
+    <form action="/enviarDados" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+        <br />
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+        <br />
+
+        <label for="opcoes">Escolha uma opção:</label>
+        <select id="opcoes" name="opcoes">
+            <option value="1">Opção 1</option>
+            <option value="2">Opção 2</option>
+        </select>
+        <br />
+
+        <label>Mensagem:</label>
+        <textarea rows="4" cols="50" placeholder="Escreva aqui..."></textarea>
+        <br />
+
+        <button type="submit">Enviar Formulário</button>
+    </form>
+
+    <!-- Elementos Embutidos -->
+    <iframe src="https://example.com" width="400" height="300" title="Exemplo de site embutido"></iframe>
+
+    
+
+</body>
+</html>
+

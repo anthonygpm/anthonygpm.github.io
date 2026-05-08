@@ -100,13 +100,77 @@
         <section id="projetos"> 
             <h2> Projetos </h2>
 
-            <h3> Projeto 1: Site Pessoal </h3>
-            <p>
-                Criei este site pessoal para servir como meu portfólio online. Ele apresenta minhas habilidades, projetos e informações de contato. O site será responsivo e acessível, utilizando HTML, CSS e JavaScript.
-            </p>
+            <article>
+                <h3>Portfólio Pessoal</h3>
+                <p>
+                    Este portfólio que você está vendo agora!
+                    Feito com <strong>HTML puro</strong> como ponto de partida.
+                </p>
+                <p>
+                    Status: <mark>Em construção</mark>
+                </p>
+                <a href="#">Ver projeto</a>
+            </article>
+
+            <h3>Tabela de Projetos</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Projeto</th>
+                        <th>Tecnologia</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Portfólio Pessoal</td>
+                        <td>HTML</td>
+                        <td>Em construção</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Próximo projeto (a definir)</td>
+                        <td>Planejado</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
 
-        
+        <hr />
+
+        <!-- SEÇÃO: Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Quer trocar uma ideia? Preencha o formulário abaixo!</p>
+ 
+            <form action="/enviarDados" method="POST">
+ 
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                <br /><br />
+ 
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com">
+                <br /><br />
+ 
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="colaboracao">Colaboração</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <br /><br />
+ 
+                <label for="mensagem">Mensagem:</label>
+                <br />
+                <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <br /><br />
+ 
+                <button type="submit">Enviar Mensagem</button>
+ 
+            </form>
+        </section>
+
     </main>
 </body>
 </html>

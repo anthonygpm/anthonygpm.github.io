@@ -3,174 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio - Anthony Moura</title>
 </head>
 <body>
-    <h1>Exemplo de Tags HTML</h1>
-    <!-- Tags Genéricas -->
-    <span>Texto em um span</span>
-    <span>Texto em um span</span>
-    <div>Texto em uma div</div>
 
-    <!-- Estrutura Semântica -->
-    <header>Aqui geralmente fica o logo e a navegação principal (Menu)</header>
-    <nav>Links de navegação do site</nav>
-    <main>O conteúdo principal da página</main>
-    <section>Uma seção genérica de conteúdo</section>
-    <article>Um conteúdo independente, como um post de blog</article>
-    <aside>Conteúdo lateral complementário (sidebar)</aside>
-    <footer>Rodapé da página</footer>
+    <!-- ============================================================
+         CABEÇALHO (header): logo/nome e navegação principal
+    ============================================================ -->
 
-    <!-- Textos -->
-    <span>Texto dentro de um span<br />com quebra de linha</span>
-
-    <p>Este é um <u>parágrafo 1</u></p>
-    <p>Este é um <i>parágrafo 2</i></p>
-    <p>Este é um <b>parágrafo 3</b></p>
-    <p>Este é um <s>parágrafo 4</s></p>
-    <p>Este é um <mark>parágrafo 5</mark></p>
-    <p>Este é um <sub>parágrafo 6</sub></p>
-    <p>Este é um <sup>parágrafo 7</sup></p>
-    <p>Este é um comando: <kbd>Ctrl</kbd> + <kbd>C</kbd></p>
-    <p>O evento ocorrerá em <time datetime="2026-05-06">6 de Maio</time>.</p>
-
-    <pre>
-        A tag pre
-        mantém
-        a formatação (espaços e quebras)
-        exatamente como está escrito!
-    </pre>
-
-    <!-- Tags Interativas -->
-    <details>
-        <summary>Clique aqui para expandir</summary>
-        <p>Este conteúdo estava escondido! Muito útil para sessões de FAQ (Perguntas Frequentes).</p>
-    </details>
-
-    <hr />  
-
-    <!-- Tags Funcionais -->
-     <a href="https://www.google.com"> 
-        Ir para o google
-     </a>
-
-    <br />
-
-    <button>
-        Clique aqui
-    </button>
-
-    <!-- Citação -->
-    <blockquote> caixa de citação </blockquote>
-
-    <textarea> 
-        caixa para textos longos 
-    </textarea>
-
-    <!-- Tags Semânticas -->
-    <h1>Titulo em h1</h1>
-    <h3>Subtitulo em h3</h3>
-    <h6>Subitulo em h6</h6>
-
-    <p> Texto dentro de um <strong>parágrafo</strong> </p>
-    <p> Texto dentro de um <i>parágrafo</i> </p>
-    <p> Texto dentro de um <s>parágrafo</s> </p>
-
-    <!-- Listas -->
-    <ul> 
-        <li> Item 1 </li>
-        <li> Item 2 </li>
-        <li> Item 3 </li>
-    </ul>
-
-    <ol> 
-        <li> Item 1 </li>
-        <li> Item 2 </li>
-        <li> Item 3 </li>
-    </ol>
-
-    <!-- Listas de Descrição -->
-    <dl>
-        <dt>HTML</dt>
-        <dd>Linguagem de Marcação de Hipertexto.</dd>
-
-        <dt>CSS</dt>
-        <dd>Linguagens de Folhas de Estilo em Cascata.</dd>
-    </dl>
+    <header> 
+        <h1>Portfólio Anthony Moura</h1>
+        <p> Desenvolvedor Web Full Stack em formação </p>
+        
+        <nav>
+            <a href="#sobre">Sobre</a> |
+            <a href="#habilidades">Habilidades</a> |
+            <a href="#projetos">Projetos</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
     <hr />
 
-    <!-- Tabela -->
-    <table> 
-        <tr> 
-            <th> Coluna 1 </th>
-            <th> Coluna 2 </th>
-            <th> Coluna 3 </th>
-        </tr>
-        <tr> 
-            <td> Linha 1, Coluna 1 </td>
-            <td> Linha 1, Coluna 2 </td>
-            <td> Linha 1, Coluna 3 </td>
-        </tr>
-        <tr> 
-            <td colspan="2"> Linha 2, Usando Coluna 1 e 2 </td>
-            <td> Linha 2, Coluna 3 </td>
-        </tr>
-    </table>
+    <!-- ============================================================
+         CONTEÚDO PRINCIPAL (main)
+    ============================================================ -->
 
-    <!-- Mídia -->
-    <img src="https://placehold.co/200x100/EEE/31343C" alt="Imagem de exemplo">
+    <main> 
 
-    <figure>
-        <img src="https://placehold.co/150x150" alt="Exemplo de foto geométrica">
-        <figcaption>Fig. 1 - Uma imagem de placeholder genérica.</figcaption>
-    </figure>
+        <!-- SEÇÃO: Sobre Mim -->
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
 
-    <audio controls>
-        <source src="audio.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+            <figure>
+                <img src="https://placehold.co/150x150" alt="Foto de Anthony Moura" width="150" height="150">
+                <figcaption>Anthony Moura</figcaption>
+            </figure>
 
-    <video width="320" height="240" controls>
-        <source src="video.mp4" type="video/mp4">
-        Seu navegador não suporta a tag de vídeo.
-    </video>
+            <p>
+                Olá! Sou <strong>Anthony Moura</strong>, um entusiasta da tecnologia e apaixonado por desenvolvimento web. Atualmente, estou me dedicando a aprender e aprimorar minhas habilidades como desenvolvedor web full stack. Tenho experiência com <mark>Java e Spring Boot</mark> e estou explorando <mark>HTML, CSS e JavaScript</mark>.
+            </p>
+            <p>
+                Meu objetivo é construir interfaces bonitas e acessíveis para a web, junto com aplicações funcionais e bem estruturadas.
+            </p>
 
-    <!-- Formulário -->
-    <form action="/enviarDados" method="POST">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-        <br />
+            <p>
+                Comecei minha jornada no desenvolvimento em
+                <time datetime="2024-01-01">Janeiro de 2024</time>.
+            </p>
 
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade">
-        <br />
+            <blockquote>
+                "A web é para todos." — Tim Berners-Lee
+            </blockquote>
+        </section>
 
-        <label for="opcoes">Escolha uma opção:</label>
-        <select id="opcoes" name="opcoes">
-            <option value="1">Opção 1</option>
-            <option value="2">Opção 2</option>
-        </select>
-        <br />
+        <hr />
 
-        <label>Mensagem:</label>
-        <textarea rows="4" cols="50" placeholder="Escreva aqui..."></textarea>
-        <br />
+        <section id="habilidades"> 
+            <h2> Habilidades </h2>
 
-        <button type="submit">Enviar Formulário</button>
-    </form>
+            <dl>
+                <dt><strong>Java</strong></dt>
+                <dd>Linguagem de programação orientada a objetos — utilizada para desenvolvimento backend.</dd>
 
-    <!-- Elementos Embutidos -->
-    <iframe src="https://example.com" width="400" height="300" title="Exemplo de site embutido"></iframe>
+                <dt><strong>Spring Boot</strong></dt>
+                <dd>Framework baseado em Spring — utilizado para facilitar a criação de aplicações Java.</dd>
 
-    <!-- Diálogos / Modais (Requer um pouco de JS para abrir/fechar na vida real, mas a tag existe) -->
-    <dialog>
-        <p>Esta é uma janela de diálogo nativa do HTML!</p>
-        <form method="dialog">
-            <button>Fechar</button>
-        </form>
-    </dialog>
-    
+                <dt><strong>C/C++</strong></dt>
+                <dd>Linguagens de programação de baixo nível — utilizadas para desenvolvimento de sistemas e aplicações de alto desempenho.</dd>
+            </dl>
+
+            <h3>Linguagens que estou aprendendo</h3>
+            <ul>
+                <li>HTML (HyperText Markup Language)</li>
+                <li>CSS (Cascading Style Sheets)</li>
+                <li>JavaScript (linguagem de programação para web)</li>
+            </ul>
+
+            <h3>Ferramentas que estou aprendendo</h3>
+            <ul>
+                <li>Git e GitHub (controle de versão)</li>
+                <li>Figma (design de interfaces)</li>
+                <li>Jira (gerenciamento de projetos)</li>
+            </ul>
+
+            <details>
+                <summary>Por que escolhi Desenvolvimento Web?</summary>
+                <p>
+                    Escolhi o desenvolvimento web porque é uma área dinâmica e em constante evolução, que me permite criar coisas incríveis que podem ser acessadas por pessoas em todo o mundo. A web é uma plataforma universal, e eu quero fazer parte disso, construindo experiências digitais que sejam úteis, bonitas e acessíveis para todos.
+                </p>
+            </details>
+        </section>
+
+        <hr />
+
+        <section id="projetos"> 
+            <h2> Projetos </h2>
+
+            <h3> Projeto 1: Site Pessoal </h3>
+            <p>
+                Criei este site pessoal para servir como meu portfólio online. Ele apresenta minhas habilidades, projetos e informações de contato. O site será responsivo e acessível, utilizando HTML, CSS e JavaScript.
+            </p>
+        </section>
+
+        
+    </main>
 </body>
 </html>
-

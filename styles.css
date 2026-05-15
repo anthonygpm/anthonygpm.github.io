@@ -1,0 +1,29 @@
+* {
+    font-family: 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: ;
+}
+
+header nav ul {
+    display: flex;
+    gap: 15px;    
+}
+
+header nav ul li {
+    list-style: none;
+}

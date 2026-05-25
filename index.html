@@ -1,229 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio - Anthony Moura</title>
     <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
-    <link rel="stylesheet" href="styles.css">
-</head> 
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-    <!-- ============================================================
-         CABEÇALHO (header): logo/nome e navegação principal
-    ============================================================ -->
+  <body>
+    <header class="header">
+      <h1>Anthony Moura</h1>
 
-    <header> 
-        <h1>Anthony Moura</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
 
     <hr />
 
     <div class="content">
-        <!-- ============================================================
-            CONTEÚDO PRINCIPAL (main)
-        ============================================================ -->
+      <main>
+        <section id="sobre">
+          <div class="sobre-grid">
+            <div class="sobre-texto">
+              <div class="introducao">
+                Olá, <br />
+                sou <span class="destaque">Anthony</span>, <br />
+                Desenvolvedor Full-stack
+              </div>
 
-        <main> 
+              <p class="sobre-introducao">
+                Meu objetivo é construir interfaces <span class="destaque">bonitas</span> e <span class="destaque">acessíveis</span> para a web,
+                junto com aplicações <span class="destaque">funcionais</span> e <span class="destaque">bem estruturadas</span>.
+              </p>
 
-            <!-- SEÇÃO: Sobre Mim -->
-            <section id="sobre">
-                <h2>Sobre Mim</h2>
+            </div>
 
-                <figure>
-                    <img src="https://placehold.co/150x150" alt="Foto de Anthony Moura" width="150" height="150">
-                    <figcaption>Anthony Moura</figcaption>
-                </figure>
+          <div class = "sobre-foto-container">
+            <figure class="sobre-foto">
+              <img
+              src="https://placehold.co/150x150"
+              alt="Foto de Anthony Moura"
+              width="150"
+              height="150"
+              />
+              <figcaption>Anthony Moura</figcaption>
+            </figure>
 
-                <p>
-                    Olá! Sou <strong>Anthony Moura</strong>, um entusiasta da tecnologia e apaixonado por desenvolvimento web. Atualmente, estou me dedicando a aprender e aprimorar minhas habilidades como desenvolvedor web full stack. Tenho experiência com <mark>Java e Spring Boot</mark> e estou explorando <mark>HTML, CSS e JavaScript</mark>.
-                </p>
-                <p>
-                    Meu objetivo é construir interfaces bonitas e acessíveis para a web, junto com aplicações funcionais e bem estruturadas.
-                </p>
+            <div class="social-links">
+              <a href="https://github.com/anthonygpm" target="_blank" rel="noreferrer">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="GitHub"
+                  width="16"
+                  height="16"
+                />
+                GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/anthonymoura-6622ab277/" target="_blank" rel="noreferrer">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                  alt="LinkedIn"
+                  width="16"
+                  height="16"
+                />
+                LinkedIn
+              </a>
+            </div>
+            
+          </div>
 
-                <p>
-                    Comecei minha jornada no desenvolvimento em
-                    <time datetime="2024-01-01">Janeiro de 2024</time>.
-                </p>
+          </div>
 
-                <blockquote>
-                    "A web é para todos." — Tim Berners-Lee
-                </blockquote>
-            </section>
+          <p class="sobre-caixa">
+            Sou um desenvolvedor apaixonado por tecnologia, sempre em evolução
+            no desenvolvimento web. Tenho experiência com Java, Spring Boot e
+            C/C++ e atuo com front-end usando HTML, CSS, Tailwind e JavaScript.
+            Acredito que a tecnologia transforma vidas e quero criar soluções
+            úteis, bonitas e acessíveis para todos.
+          </p>
+        </section>
 
-            <hr />
+        <section id="habilidades">
+          <h2>Habilidades</h2>
+          <div class="skills-grid">
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>HTML</figcaption>
+            </figure>
 
-            <section id="habilidades"> 
-                <h2> Habilidades </h2>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>CSS</figcaption>
+            </figure>
 
-                <dl>
-                    <dt><strong>Java</strong></dt>
-                    <dd>Linguagem de programação orientada a objetos — utilizada para desenvolvimento backend.</dd>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+                alt="Tailwind"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>Tailwind</figcaption>
+            </figure>
 
-                    <dt><strong>Spring Boot</strong></dt>
-                    <dd>Framework baseado em Spring — utilizado para facilitar a criação de aplicações Java.</dd>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JavaScript"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>JavaScript</figcaption>
+            </figure>
 
-                    <dt><strong>C/C++</strong></dt>
-                    <dd>Linguagens de programação de baixo nível — utilizadas para desenvolvimento de sistemas e aplicações de alto desempenho.</dd>
-                </dl>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>Java</figcaption>
+            </figure>
 
-                <h3>Linguagens que estou aprendendo</h3>
-                <ul>
-                    <li>HTML (HyperText Markup Language)</li>
-                    <li>CSS (Cascading Style Sheets)</li>
-                    <li>JavaScript (linguagem de programação para web)</li>
-                </ul>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                alt="Spring"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>Spring</figcaption>
+            </figure>
 
-                <h3>Ferramentas que estou aprendendo</h3>
-                <ul>
-                    <li>Git e GitHub (controle de versão)</li>
-                    <li>Figma (design de interfaces)</li>
-                    <li>Jira (gerenciamento de projetos)</li>
-                </ul>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
+                alt="Node.js"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>Node.js</figcaption>
+            </figure>
 
-                <details>
-                    <summary>Por que escolhi Desenvolvimento Web?</summary>
-                    <p>
-                        Escolhi o desenvolvimento web porque é uma área dinâmica e em constante evolução, que me permite criar coisas incríveis que podem ser acessadas por pessoas em todo o mundo. A web é uma plataforma universal, e eu quero fazer parte disso, construindo experiências digitais que sejam úteis, bonitas e acessíveis para todos.
-                    </p>
-                </details>
-            </section>
+            <figure class="skill-card">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C/C++"
+                width="72"
+                height="72"
+                loading="lazy"
+              />
+              <figcaption>C/C++</figcaption>
+            </figure>
+          </div>
+        </section>
 
-            <hr />
+        <section id="projetos">
+          <h2>Projetos</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Portfólio Pessoal</h3>
+                <span class="project-badge">Em construção</span>
+              </div>
+              <p>
+                Este portfólio que você está vendo agora! Feito com
+                <strong>HTML</strong> como ponto de partida.
+              </p>
+              <p class="project-meta">Tecnologias: HTML, CSS, JavaScript</p>
+              <a class="project-link" href="#">Ver projeto</a>
+            </article>
 
-            <section id="projetos"> 
-                <h2> Projetos </h2>
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Próximo Projeto</h3>
+                <span class="project-badge project-badge--mute">Planejado</span>
+              </div>
+              <p>
+                Um novo projeto para consolidar habilidades de front-end e
+                back-end com foco em experiência do usuario.
+              </p>
+              <p class="project-meta">Tecnologias: a definir</p>
+              <a class="project-link" href="#">Em breve</a>
+            </article>
+          </div>
+        </section>
 
-                <article>
-                    <h3>Portfólio Pessoal</h3>
-                    <p>
-                        Este portfólio que você está vendo agora!
-                        Feito com <strong>HTML puro</strong> como ponto de partida.
-                    </p>
-                    <p>
-                        Status: <mark>Em construção</mark>
-                    </p>
-                    <a href="#">Ver projeto</a>
-                </article>
+        <section id="contato">
+          <h2>Contato</h2>
+          <p class="contact-intro">Quer trocar uma ideia? Preencha o formulário abaixo!</p>
 
-                <h3>Tabela de Projetos</h3>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Projeto</th>
-                            <th>Tecnologia</th>
-                            <th>Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Portfólio Pessoal</td>
-                            <td>HTML</td>
-                            <td>Em construção</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Próximo projeto (a definir)</td>
-                            <td>Planejado</td>
-                        </tr>
-                    </tbody>
-                </table>
+          <form class="contact-card" action="/enviarDados" method="POST">
+            <div class="contact-form">
+              <label for="nome">Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+              />
 
-            </section>
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+              />
 
-            <hr />
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="colaboracao">Colaboração</option>
+                <option value="duvida">Dúvida</option>
+                <option value="outro">Outro</option>
+              </select>
 
-            <!-- SEÇÃO: Contato -->
-            <section id="contato">
-                <h2>Contato</h2>
-                <p>Quer trocar uma ideia? Preencha o formulário abaixo!</p>
-    
-                <form action="/enviarDados" method="POST">
-                    <fieldset>
-                        <legend>Formulário de Contato</legend>
-    
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
-                        <br /><br />
-        
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" placeholder="seu@email.com">
-                        <br /><br />
-        
-                        <label for="assunto">Assunto:</label>
-                        <select id="assunto" name="assunto">
-                            <option value="colaboracao">Colaboração</option>
-                            <option value="duvida">Dúvida</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                        <br /><br />
-        
-                        <label for="mensagem">Mensagem:</label>
-                        <br />
-                        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem aqui..."></textarea>
-                        <br /><br />
-        
-                        <button type="reset">Limpar Formulário</button>
-                        <button type="submit">Enviar Mensagem</button>
-                    </fieldset>
-    
-                </form>
-            </section>
+              <label for="mensagem">Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+            </div>
 
-        </main>
-        
-        <aside> 
-            <h2>Curiosidades</h2>
-            <ul>
-                <li>Meu nome completo é Anthony Gabriel Paulino de Moura.</li>
-                <li>Sou apaixonado por tecnologia desde criança.</li>
-                <li>Adoro aprender novas linguagens de programação.</li>
-                <li>Tenho uma cadela chamada Fiona.</li>
-            </ul>
-
-            <h2>Links Úteis</h2>
-            <ul>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
-                <li><a href="https://github.com/anthonygpm" target="_blank">Meu GitHub</a></li>
-            </ul>
-    
-            <h3>Curiosidade HTML do Dia</h3>
-            <details>
-                <summary>O que é a tag <code>&lt;pre&gt;</code>?</summary>
-                <pre>
-A tag pre preserva
-    espaços e
-        quebras de linha
-exatamente como estão no código!
-                </pre>
-            </details>
-        </aside>
+            <div class="form-actions">
+              <button type="reset" class="button-secondary">Limpar Formulário</button>
+              <button type="submit" class="button-primary">Enviar Mensagem</button>
+            </div>
+          </form>
+        </section>
+      </main>
 
     </div>
- 
+
     <hr />
 
-    <!-- ============================================================
-         RODAPÉ (Footer)
-    ============================================================ -->
-    <footer>
+    <footer class="footer">
+      <div class="footer-inner">
         <p>
-            Feito com <strong>HTML puro</strong> por Anthony Moura &mdash;
-            <time datetime="2026">2026</time>
+          Portfólio pessoal de Anthony Moura &mdash;
+          <time datetime="2026">2026</time>
         </p>
         <p>
-            <a href="mailto:anthonygpm2@gmail.com">anthonygpm2@gmail.com</a>
+          <a href="mailto:anthonygpm2@gmail.com">anthonygpm2@gmail.com</a>
         </p>
+      </div>
     </footer>
-</body>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>

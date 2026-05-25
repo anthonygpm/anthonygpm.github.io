@@ -20,11 +20,27 @@ body {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: block;
 }
 
-header {
+#sobre {
+    position: relative;
+    z-index: 0;
+}
+
+#sobre::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("./images/background_sobre.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.10;
+    z-index: -1;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,35 +56,34 @@ header {
     font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
 }
 
-header h1,
-header a {
+.header h1, .header a {
     font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
     color: #ffffff;
     font-weight: 400;
 }
 
-header h1 {
+.header h1 {
     font-size: 32px;
     margin: 0;
 }
 
-header nav ul {
+.header nav ul {
     display: flex;
     gap: 24px;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+.header nav ul li {
     list-style: none;
 }
 
-header nav a {
+.header nav a {
     font-size: 20px;
     text-decoration: none;
 }
 
-header nav a::after {
+.header nav a::after {
     content: "";
     display: block;
     width: 0%;
@@ -76,6 +91,401 @@ header nav a::after {
     background-color: #02D07E;
     transition: all 0.3s ease;
 }
-header nav a:hover::after {
+.header nav a:hover::after {
     width: 100%;
 }
+
+.destaque {
+    color: #02D07E;
+}
+
+.sobre-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 56px 48px;
+    max-width: 1100px;
+    margin: 0 160px;
+}
+
+.sobre-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.sobre-texto p {
+    max-width: 560px;
+    line-height: 1.6;
+    color: #d6d6d6;
+}
+
+.introducao {
+    font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.sobre-foto {
+    margin: 0;
+    text-align: center;
+}
+
+.sobre-foto img {
+    border-radius: 16px;
+    display: block;
+    margin: 0 auto 8px;
+}
+
+.sobre-foto figcaption {
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f1f1f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 8px;
+}
+
+.social-links a:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.social-links img {
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .sobre-grid {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding: 40px 24px;
+    }
+
+    .sobre-texto p {
+        max-width: none;
+    }
+}
+
+.sobre-introducao {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.sobre-caixa {
+    background-color: #02d07e;
+    color: #0f1f17;
+    padding: 20px 24px;
+    border-radius: 16px;
+    max-width: 760px;
+    margin: 24px auto 0;
+    line-height: 1.6;
+    box-shadow: 0 12px 24px rgba(2, 208, 126, 0.25);
+}
+
+@media (max-width: 900px) {
+    .sobre-caixa {
+        margin: 16px auto 0;
+        padding: 18px 20px;
+        max-width: calc(100% - 48px);
+    }
+}
+
+#habilidades {
+    padding: 72px 24px 88px;
+    text-align: center;
+}
+
+#habilidades h2 {
+    font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin: 0 0 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 32px 40px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    margin: 0;
+    display: grid;
+    justify-items: center;
+    gap: 12px;
+}
+
+.skill-card img {
+    width: 72px;
+    height: 72px;
+    filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.35));
+}
+
+.skill-card figcaption {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #bdbdbd;
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 24px;
+    }
+}
+
+#projetos {
+    padding: 72px 24px 88px;
+    text-align: center;
+}
+
+#projetos h2 {
+    font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin: 0 0 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.project-card {
+    background: linear-gradient(140deg, rgba(35, 35, 35, 0.9), rgba(28, 28, 28, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 24px 26px;
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.35);
+}
+
+.project-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.project-card p {
+    margin: 0 0 12px;
+    line-height: 1.6;
+    color: #d6d6d6;
+}
+
+.project-meta {
+    font-size: 14px;
+    color: #9fdac4;
+    margin-bottom: 18px;
+}
+
+.project-badge {
+    background-color: rgba(2, 208, 126, 0.18);
+    color: #02d07e;
+    font-size: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.project-badge--mute {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #bdbdbd;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #02d07e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#contato {
+    padding: 72px 24px 96px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-family: "Manrope", 'Trebuchet MS', 'Liberation Sans', 'Nimbus Sans L', sans-serif;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    margin: 0 0 16px;
+}
+
+.contact-intro {
+    color: #d6d6d6;
+    margin: 0 0 32px;
+}
+
+.contact-card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 28px 30px;
+    border-radius: 18px;
+    background: linear-gradient(140deg, rgba(35, 35, 35, 0.95), rgba(24, 24, 24, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.35);
+    text-align: left;
+}
+
+.contact-form {
+    display: grid;
+    gap: 16px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #bdbdbd;
+    letter-spacing: 0.4px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    background-color: #1f1f1f;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 12px 14px;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 2px solid rgba(2, 208, 126, 0.6);
+    border-color: transparent;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 22px;
+    flex-wrap: wrap;
+}
+
+.button-primary,
+.button-secondary {
+    border: none;
+    border-radius: 999px;
+    padding: 10px 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #02d07e;
+    color: #0f1f17;
+}
+
+.button-secondary {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #f1f1f1;
+}
+
+.button-primary:hover {
+    filter: brightness(1.05);
+}
+
+.button-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+@media (max-width: 700px) {
+    .contact-card {
+        padding: 24px;
+    }
+
+    .form-actions {
+        justify-content: stretch;
+    }
+
+    .button-primary,
+    .button-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.footer {
+    background-color: #2b2b2b;
+    padding: 20px 48px;
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.footer-inner p {
+    margin: 0;
+    color: #d6d6d6;
+}
+
+.footer-inner a {
+    color: #02d07e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-inner a:hover {
+    text-decoration: underline;
+}
+   

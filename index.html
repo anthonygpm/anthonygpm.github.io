@@ -256,7 +256,7 @@
           <h2 class="mb-4 text-[28px] font-normal tracking-[0.5px]">Contato</h2>
           <p class="mb-8 text-[#d6d6d6]">Quer trocar uma ideia? Preencha o formulário abaixo!</p>
 
-          <form class="mx-auto max-w-[720px] rounded-[18px] border border-white/10 bg-[linear-gradient(140deg,rgba(35,35,35,0.95),rgba(24,24,24,0.95))] p-7 text-left shadow-[0_18px_32px_rgba(0,0,0,0.35)] max-[768px]:p-6" action="/enviarDados" method="POST">
+          <form id="contact-form" class="mx-auto max-w-[720px] rounded-[18px] border border-white/10 bg-[linear-gradient(140deg,rgba(35,35,35,0.95),rgba(24,24,24,0.95))] p-7 text-left shadow-[0_18px_32px_rgba(0,0,0,0.35)] max-[768px]:p-6" action="/enviarDados" method="POST">
             <div class="grid gap-4">
               <label class="text-[14px] tracking-[0.4px] text-[#bdbdbd]" for="nome">Nome</label>
               <input
@@ -265,6 +265,8 @@
                 id="nome"
                 name="nome"
                 placeholder="Digite seu nome"
+                required
+                minlength="3"
               />
 
               <label class="text-[14px] tracking-[0.4px] text-[#bdbdbd]" for="email">E-mail</label>
@@ -274,6 +276,7 @@
                 id="email"
                 name="email"
                 placeholder="seu@email.com"
+                required
               />
 
               <label class="text-[14px] tracking-[0.4px] text-[#bdbdbd]" for="assunto">Assunto</label>
@@ -294,8 +297,19 @@
                 name="mensagem"
                 rows="5"
                 placeholder="Escreva sua mensagem aqui..."
+                required
+                minlength="10"
+                maxlength="256"
               ></textarea>
             </div>
+
+            <div
+              id="form-feedback"
+              class="mt-6 rounded-xl border border-white/10 bg-[#1f1f1f] px-3.5 py-3 text-[14px] text-white"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></div>
 
             <div class="mt-6 flex flex-wrap justify-end gap-3 max-[768px]:justify-stretch">
               <button type="reset" class="rounded-full bg-white/10 px-4 py-2.5 font-semibold text-[#f1f1f1] hover:bg-white/15 max-[768px]:w-full">Limpar Formulário</button>

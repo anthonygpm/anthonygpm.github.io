@@ -216,11 +216,17 @@
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
+  .contents {
+    display: contents;
+  }
   .flex {
     display: flex;
   }
   .grid {
     display: grid;
+  }
+  .hidden {
+    display: none;
   }
   .inline-flex {
     display: inline-flex;
